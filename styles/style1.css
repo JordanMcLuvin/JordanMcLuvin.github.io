@@ -1,12 +1,12 @@
 html{background-color:blue;font-size:16px;}
-body{width:700px;margin:0 auto;background-color:#ffffff;padding:0px 20px 20px 20px;border:5px solid red;}
+body{width:700px;margin:0px auto;background-color:#ffffff;padding:0px 20px 20px 20px;border:5px solid red;}
 h1{color:blue;font-size:60px;text-align:center;font-family: 'Open Sans', sans-serif;text-shadow:3px 3px 1px black;
-	margin:0;padding:20px 0;}
+	margin:0px;padding:20px 0;}
 h2{color:red;font-size:24px;width:270px;border:1px solid black;}
 h2:hover{color:yellow;width:270px;border:1px solid black;text-shadow: 430px 0 0px red}
-p{font-size: 20px;color:forestgreen;width:280px;border:2px solid orange;text-align:center;margin:20 auto;}
+p{font-size: 20px;color:forestgreen;width:280px;border:2px solid orange;text-align:center;margin:20px auto;}
 ul{line-height: 2;letter-spacing: 1px;font-size: 20px;color:darkviolet;text-align:center;}
-#bacon{display: block; margin:0 auto;}
+#bacon{display: block; margin:0px auto;}
 #test-id{color:cyan;}
-#haiku{width:300px;font-family: 'lobster', cursive;color:black;border:2px solid gold;margin:0 auto;}
+#haiku{width:300px;font-family: 'lobster', cursive;color:black;border:2px solid gold;margin:0px auto;}
 #github{margin:200px;}
