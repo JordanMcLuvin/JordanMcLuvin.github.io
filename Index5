@@ -1,0 +1,37 @@
+<!--This is simply what a comment looks like-->
+
+<!doctype html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <title>Im going to present a flash video game on this page</title>
+  <link href="styles/style1.css" rel="stylesheet" type="text/css"/>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <h1> It is definitely going to take some TLC but it'll be worth it when it works.
+  </h1>
+  <p title="Why I want to make this?">I would like to be proficient enough in coding to make a site similar to newgrounds.</p>
+  <!--Adding the title to <p> makes it display a tool tip when highlighted with the mouse.-->
+  
+  <P id="test-id">In this page I have one strong goals.</p> <!--This element lists things, I chose unordered, but I can order it with ol. ol uses numbers. ul uses bullet points.-->
+  <ul> <li>It will be fun</li> <li>It will be complete</li> <li>Hopefully, it will be funny</li> </ul><hr/>
+  
+  <!--This is where the video is gonna go if I can get it to work-->
+
+  <!--The video will go in between these comments-->
+  <a href="https://github.com/JordanMcLuvin"id="github">Heres my github, and a meme <abbr title="This man is a legend">Double Mermaid</abbr>.</a><br/>
+  <img src="images/Legendary Double Mermaid.jpg"alt="sadly, the link didn't work for you so you see nothing."width="300"height="168"id="Legendary Double Mermaid">
+  Here is a batman comic too <abbr title="Ha!">Batman</abbr><br/><img src="images/batman.png"alt="Haha it sucks that you missed out on the pic get better internet scrub."width="189"height="189">
+  <br/><a href="index2.htm"title="This goes to the second page.">Continue on to page 2?</a>
+  <h2>Sincerely JordanMcLuvin</h2>
+</body>
+</html>
+
+<!--Alternatively rather than doing breaks, it's also possible to use the <pre></pre> element.
+In that element it shows all the spaces and indents put into the text. This will however make the words italicized.-->
+
+<!--The <em></em> elements are unnecessary, they are simply emphasis. They make words italicized for emphasis-->
+<!--The <strong></strong> element is similar in that it emphasises.They make words bold. Completely optional.-->
+<!--Another useful tool is <abbr title="***">words</abbr>. When highlighted, words will yield bonus info-->
