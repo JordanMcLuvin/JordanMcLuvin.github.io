@@ -19,6 +19,20 @@
   <ul> <li>It will be fun</li> <li>It will be complete</li> <li>Hopefully, it will be funny</li> </ul><hr/>
   
   <!--This is where the video is gonna go if I can get it to work-->
+        
+        <XMP>
+        <table width="100%" class="ex" cellspacing="0" border="1"> 
+           <tr> 
+              <td>
+                <object width="550" height="400">
+                   <param name="movie" value="somefilename.swf">
+                   <embed src="somefilename.swf" width="550" height="400">
+                   </embed>
+                </object>
+              </td> 
+           </tr>
+        </table> 
+        </XMP>
 
   <!--The video will go in between these comments-->
   <a href="https://github.com/JordanMcLuvin"id="github">Heres my github, and a meme <abbr title="This man is a legend">Double Mermaid</abbr>.</a><br/>
