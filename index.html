@@ -5,7 +5,7 @@
 		<title>Quiz</title>
 		<link rel="stylesheet" type="text/css" href="CSS Files/main.css">
 	</head>
-	<body>
+	<body onclick="checkanswers();">
 		<h1>Quiz</h1>
 		<div id="quiz">
 			<div id="question1">
@@ -14,8 +14,6 @@
 				<input type="radio" name="question1" value="b"/> <label>.exe</label>
 				<input type="radio" name="question1" value="c"/> <label>.js</label>
 				<input type="radio" name="question1" value="d"/> <label>.css</label>
-				<input type="radio" name="question1" value="e"/> <label>.java</label>
-<!--This is how you make comments. You can add aditional answers by adding more inputs and values for those inputs.-->
 			</div>
 			<br/>
 			
@@ -31,9 +29,9 @@
 			<div id="question3">
 				<div class="question">Moles are which of the following?</div>
 				<input type="radio" name="question3" value="a"/> <label>Omnivorous</label>
-				<input type="radio" name="question3" value="a"/> <label>Adorable</label>
-				<input type="radio" name="question3" value="a"/> <label>Whackable</label>
-				<input type="radio" name="question3" value="a"/> <label>All of the above</label>
+				<input type="radio" name="question3" value="b"/> <label>Adorable</label>
+				<input type="radio" name="question3" value="c"/> <label>Whackable</label>
+				<input type="radio" name="question3" value="d"/> <label>All of the above</label>
 			</div>
 			<br/>
 			
@@ -44,6 +42,7 @@
 				<input type="radio" name="question4" value="c"/> <label>ke</label>
 				<input type="radio" name="question4" value="d"/> <label>ki</label>
 				<input type="radio" name="question4" value="e"/> <label>ku</label>
+	<!--This is how you make comments. You can add aditional answers by adding more inputs and values for those inputs.-->
 			</div>
 			<br/>
 			
@@ -87,7 +86,7 @@
 				<div class="question">True or False: All games must run at at least 60 frames per second to be any good.</div>
 				<input type="radio" name="question9" value="a"/> <label>True</label>
 				<input type="radio" name="question9" value="b"/> <label>False</label>
-				<input type="radio" name="question9" value="b"/> <label>Just fail me already damn it!</label>
+				<input type="radio" name="question9" value="c"/> <label>Just fail me already damn it!</label>
 			</div>
 			<br />
 			
@@ -99,5 +98,19 @@
 				<input type="radio" name="question10" value="d"/> <label>all of the above.</label>
 			</div>
 		</div>
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/impress.js"></script>
+		<!--atom.js needs this to work properly-->
+		<canvas></canvas>
+		<script src="scripts/atom.js"></script>
+		<script src="scripts/easel.js"></script>
+		<script src="scripts/melon.js"></script>
+		<script src="scripts/yabble.js"></script>
+		<script src="scripts/jquery.gamequery.js"></script>
+		<script src="scripts/jaws.js"></script>
+		<script src="scripts/enchant.js"></script>
+		<script src="scripts/crafty.js"></script>
+		<script src="scripts/game.js"></script>
 	</body>
 </html>
+
