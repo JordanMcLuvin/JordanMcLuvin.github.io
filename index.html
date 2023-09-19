@@ -1,48 +1,154 @@
 <!--This is simply what a comment looks like-->
 
 <!doctype html>
-<html>
-  
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Greetings and salutations HTML programming</title>
-  <link href="styles/style1.css" rel="stylesheet" type="text/css"/>
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
+
 <body>
-  <h1> Hello Strange Familiar Programming World
-  </h1>
-  <p title="Statement of purpose">This website will hold all the games that I learn to make from the web game developers cookbook.</p>
-  <!--Adding the title to <p> makes it display a tool tip when highlighted with the mouse.-->
-  
-  <P id="test-id">The style of games I will learn how to make are as follows, in the given order.</p> <!--This element lists things, I chose unordered, but I can order it with ol. ol uses numbers. ul uses bullet points.-->
-  <ul> <li>Quiz</li> <li>Interactive fiction/click adventure</li> <li>Party game</li> <li>Puzzle</li> <li>Platformer</li>
-    <li>Fighting</li> <li>Shooter</li> <li>FPS</li> <li>RPG</li> <li>RTS</li> </ul><hr/>
-  
-  <p id="Current Progress Tracker"> <strong>This section holds links to each of the games I will make. A dead link indicates that the game has yet to be completed.</strong>.<br>
-      <em><a href="index2.html"title="This goes to the quiz game.">Quiz game  -Complete</a><br/>
-      <a href="index3.html"title="This goes to the Interative fiction game.">Interactive Fiction  -in progress</a><br/>
-      <a href="index4.html"title="This goes to the party game.">Party game</a><br/>
-      <a href="index5.html"title="This goes to the puzzle game.">Puzzle game</a><br/>
-      <a href="index6.html"title="This goes to the Platformer.">Platformer</a><br/>
-      <a href="index7.html"title="This goes to the Fighting game.">Fighting game</a><br/>
-      <a href="index8.html"title="This goes to the Shooter.">Shooter</a><br/>
-      <a href="index9.html"title="This goes to the FPS.">FPS game</a><br/>
-      <a href="index10.html"title="This goes to the RPG.">RPG game</a><br/>
-      <a href="index11.html"title="This goes to the RTS game.">RTS game</a></em>
-  </p><hr/><p>Thank you for taking interest in my projects.</p>
-  
-  <img src="images/Bacon.jpg"alt="sadly, you don't see the beautiful piece of bacon I do."width="300"height="168"id="bacon">
-  <br/><img src="images/Kitty I Drew.png"alt="It seems there was an issue and you cant see this picture."width="189"height="189">
-  <br/><a href="https://github.com/JordanMcLuvin"id="github">
-  
-  <h2>Sincerely JordanMcLuvin</h2>
+  <nav>
+    <ul class="nav-list">
+      <li id="nav-logo">
+        <a href="https://JordanMcLuvin.github.io">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/><path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/></svg>
+          <span>
+            Jordan Cepeda
+          </span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://jordanmcluvin.github.io/#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://jordanmcluvin.github.io/#contact">Contact</a>
+      </li>
+<!--      <li class="nav-item">-->
+<!--        <a href="">About</a>-->
+<!--      </li>-->
+      <li class="nav-item">
+        <a href="https://github.com/JordanMcLuvin">Github</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/jordancepeda">LinkedIn</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="introduction">
+    <div class="subsection">
+      <p id="greeting">
+        Hello, and welcome!
+      </p>
+      <p id="name">
+        My name is <span class="blue-highlight">Jordan Cepeda</span>.
+      </p>
+      <p id="mission-statement">
+        I am a <span class="blue-highlight">software engineer</span> who works in full stack.
+      </p>
+      <p id="closing-statement">Whether it is <span class="blue-highlight">front-end</span> or <span class="blue-highlight">back-end</span>, if you have an issue, I can solve it!</p>
+    </div>
+  </section>
+  <div class="separator"></div>
+
+  <section id="projects">
+    <div class="subsection">
+      <p style="font-size: 40px">Projects</p>
+      <p>
+        Though I have more projects in the past to speak on, these are the projects that brought me the most challenge and joy to work on.
+      </p>
+      <article class="project">
+        <div class="project-details">
+          <p class="title">Caribu</p>
+          <p class="tech-stack-header">Tech Stack:</p>
+          <p class="tech-stack">Typescript, React, Redux, Express, Electron, Babel</p>
+          <p class="description-box">Caribu assists with the migration of a program from monolith to microservice. Through the act of parsing the abstract syntax tree of an express application, it can extract the endpoints, functions, and dependencies and visualize how isolated a function is. The intended goal of the visualization is to streamline the process of figuring out what functions can be broken down and seperated into AWS Lambda functions. The program shows groupings of dependencies, functions, and endpoints with code snippets even showing the line in code where they first appear.</p>
+        </div>
+        <div class="project-image-wrapper">
+          <img src="images/caribu_route_explorer.png" alt="Caribu Route explorer" class="project-image">
+          <img src="images/caribu_purity_overview.png" alt="Caribu Purity Overview" class="project-image">
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <p class="title">Arbit</p>
+          <p class="tech-stack-header">Tech Stack:</p>
+          <p class="tech-stack">React, Express, MongoDB</p>
+          <p class="description-box">Arbit is a full stack application that serves as a framework to calculate and store arbitrages. It leverages prices yielded from a currency API developed in partnership with Amazon's currency exchange API and uses personally built trading algorithms to present the most profitable path of trade to yield profit.</p>
+        </div>
+        <div class="project-image-wrapper">
+          <img src="images/arbit.png" alt="Arbit example image" class="project-image">
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <p class="title">Couplets</p>
+          <p class="tech-stack-header">Tech Stack:</p>
+          <p class="tech-stack">Typescript, React Native, PostgreSQL, MongoDB, JWT, Auth0</p>
+          <p class="description-box">A poetry based social media app with modern swipe mechanics. Share multiple poems and then read others' poetry swipe to like their poems and match with other poets of similar taste.</p>
+        </div>
+        <div class="project-image-wrapper">
+          <img src="images/couplets-poem-interface.png" alt="Couplets poem interface" class="project-mobile-image">
+          <img src="images/couplets-account-details.png" alt="Couplets account interface" class="project-mobile-image">
+          <img src="images/couplets-contact-interface.png" alt="Couplets contacts interface" class="project-mobile-image">
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <p class="title">Photogenicus</p>
+          <p class="tech-stack-header">Tech Stack:</p>
+          <p class="tech-stack">TensorFlow, Javascript, React, Express, BetterSQLite3</p>
+          <p class="description-box">Photogenicus is tool for live identity validation of an individual based off of historic images. By uploading a set of facial images, a TensorFlow model can be generated that can confirm the presence of a persons face in the image set. Leveraging that functionality, we can assert whether the person in a camera is within the personnel database and approve or deny access to entry.</p>
+        </div>
+        <div class="project-image-wrapper">
+          <img src="images/photogenicus-proof-1.png" alt="Photogenicus image" class="project-image">
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <p class="title">Gitgob</p>
+          <p class="tech-stack-header">Tech Stack:</p>
+          <p class="tech-stack">Javascript, React, Express</p>
+          <p class="description-box">Gitgob is a tool that leverages the Github api to create a centralized hub where you can search and view various stats about a various Github project</p>
+        </div>
+        <div class="project-image-wrapper">
+          <img src="images/gitgob-tables.png" alt="Gitgob image" class="project-image">
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <p class="title">Let's Arcade</p>
+          <p class="tech-stack-header">Tech Stack:</p>
+          <p class="tech-stack">Python, Flask, Axios, Javascript, Vue, Express, Websocket, MongoDB</p>
+          <p class="description-box">Lets arcade was a community based gaming application developed under the startup Tech3en. During our time on the project, we built a microservice architecture with a main server built in python with flask and a chat server built in node with express and websocket. A central database was implemented in MongoDB which both servers connected to. Features included user accounts, a selection menu for games, and game rooms to play as well as chat in. With the waning of the popularity of crypto, the heart of the project had withered and future plans had to be reslated. The project had to be put on hiatus until further notice in 2022.</p>
+        </div>
+        <div class="project-image-wrapper">
+          <img src="images/lets-arcade-splash.png" alt="Let's arcade splash image" class="project-image">
+        </div>
+      </article>
+    </div>
+  </section>
+  <div class="separator"></div>
+
+  <section id="contact">
+    <div class="subsection" style="display: flex; flex-direction: column; align-items: center">
+      <h1>Contact Me</h1>
+      <p style="text-align: center">I am always looking for something new to work on. If you would like to make a query, discuss an opportunity, or even just ask me a question, reach out here.</p>
+      <a href="mailto:mrjcepeda@gmail.com" id="contact-link">
+        Email
+      </a>
+    </div>
+  </section>
+  <div class="separator"></div>
+  <section id="footer">
+    <p id="footer-info">Jordan Cepeda | Software Engineer</p>
+    <ul id="socials">
+      <li><a href="https://www.linkedin.com/in/jordancepeda">LinkedIn</a></li>
+      <li><a href="https://github.com/JordanMcLuvin">Github</a></li>
+      <li><a href="mailto:mrjcepeda@gmail.com">Email</a></li>
+    </ul>
+  </section>
 </body>
 </html>
-
-<!--Alternatively rather than doing breaks, it's also possible to use the <pre></pre> element.
-In that element it shows all the spaces and indents put into the text. This will however make the words italicized.-->
-
-<!--The <em></em> elements are unnecessary, they are simply emphasis. They make words italicized for emphasis-->
-<!--The <strong></strong> element is similar in that it emphasises.They make words bold. Completely optional.-->
-<!--Another useful tool is <abbr title="***">words</abbr>. When highlighted, words will yield bonus info-->

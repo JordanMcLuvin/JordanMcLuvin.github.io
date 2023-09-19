@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*html, body {*/
+/*    min-height: 100%;*/
+/*}*/
+
+body {
+    color: #FFF9FB;
+    background-color: rgba(2,0,36,1);
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #D3D4D9;
+    transition: .15s;
+}
+
+a:hover {
+    color: #4B88A2;
+    transition: .15s;
+}
+
+nav {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    gap: 2rem;
+}
+
+#nav-logo {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    #nav-logo {
+        flex-basis: auto;
+        margin-right: auto;
+    }
+}
+
+.nav-item {
+    font-size: 20px;
+    gap: 2rem;
+}
+
+.separator {
+    height:2px;
+    background-color: #BB0A21;
+}
+
+.blue-highlight {
+    color: #4B88A2;
+}
+
+.subsection {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#introduction {
+
+}
+
+@media (min-width: 900px) {
+    #introduction {
+        height: 90vh;
+    }
+
+    #greeting {
+        font-size: 2rem;
+        margin: 50px 0;
+        padding: 0;
+    }
+
+    #name {
+        font-size: 3rem;
+        margin: 100px 0;
+        padding: 0;
+    }
+
+    #mission-statement {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    #closing-statement {
+        margin: 0 0 100px 0;
+    }
+}
+
+#greeting {
+    font-size: 2rem;
+    padding: 0;
+}
+
+#name {
+    font-size: 3rem;
+    padding: 0;
+}
+
+#mission-statement {
+    font-size: 2rem;
+    padding: 0;
+}
+
+#projects {
+    padding: 5rem 1rem;
+    margin: 0 auto;
+    background: rgb(2,0,36);
+    background: -webkit-linear-gradient(180deg, #252627 0%, #4b4d4f 100%);
+}
+
+.project {
+    margin: 5rem 0;
+    padding: 40px 20px;
+    border-radius: 30px;
+    border-top: solid #BB0A21;
+    border-bottom: solid #BB0A21;
+}
+
+.description-box {
+    background-color: #252627;
+    border: 1px solid #BB0A21;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.project-mobile-image {
+    width: 45%;
+    margin: 2px;
+    border-radius: 15px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.tech-stack-header {
+    margin: 0;
+    font-weight: bold;
+}
+
+@media (min-width: 900px) {
+    .project {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+        border-top: none;
+        border-right: solid #BB0A21;
+    }
+
+    .project-details {
+        order: 2;
+        text-align: right;
+        grid-column: 5/11;
+        grid-row: 1/2;
+    }
+
+    .project-image-wrapper {
+        display: flex;
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+
+    .project-image {
+        width: 100%;
+        margin: 2px;
+        border-radius: 5px;
+    }
+
+    .project-mobile-image {
+        width: 100%;
+        margin: 2px;
+        border-radius: 15px;
+    }
+
+    .tech-stack {
+        margin: 0;
+    }
+
+    .description-box {
+        background-color: #252627;
+        border: 1px solid #BB0A21;
+        border-radius: 5px;
+        padding: 2rem;
+    }
+}
+
+#contact {
+    color: black;
+    font-size: 20px;
+    background: rgb(255,255,255);
+    background: -webkit-linear-gradient(90deg, rgb(215, 215, 215) 0%,rgba(122,122,122,1) 100%);
+    padding: 5rem 0;
+}
+
+#contact-link {
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    background-color: #e5383b;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px gray;
+    transition: .15s;
+}
+
+#contact-link:hover {
+    color: #e5383b;
+    background-color: white;
+    box-shadow: 4px 4px 4px gray;
+}
+
+#contact-link:active {
+    box-shadow: inset 3px 3px 3px gray;
+}
+
+#footer {
+    padding: 5rem 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#footer-info {
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+    margin: 0;
+    font-size: 20px;
+    gap: 2rem;
+}
+
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
